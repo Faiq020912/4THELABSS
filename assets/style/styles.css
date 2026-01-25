@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.layouts {
+    max-width: 476px;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: #579fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.navbar h3 {
+    color: white;
+    font-weight: 900;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #579fff;
+}
+
+.bottombar ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding: 8px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 112px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 8px;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.item-image {
+    width: 50%;
+}
+
+.item-submit {
+    color: white;
+    padding: 4px 8px;
+    background-color: #579fff;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+}
+
+.bottombar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bottombar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    display: block;
+}
+
+.bottombar ul li a:hover {
+    scale: 110%;
+    transition: all 0.2s ease-in-out;
+}
